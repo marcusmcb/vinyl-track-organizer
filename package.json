@@ -1,0 +1,14 @@
+{
+  "name": "vinyl-track-organizer",
+  "private": true,
+  "version": "0.0.0",
+  "description": "DJ-focused vinyl library application that turns a Discogs release collection into a searchable track-level library.",
+  "scripts": {
+    "build": "pnpm -r build",
+    "test": "pnpm -r test",
+    "typecheck": "pnpm -r typecheck"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "name": "@vinyl/discogs-importer",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "bin": {
+    "discogs-import": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@vinyl/catalog-db": "workspace:*",
+    "@vinyl/shared-types": "workspace:*",
+    "pg": "^8.13.0",
+    "pg-copy-streams": "^6.0.6",
+    "saxes": "^6.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/pg": "^8.11.0",
+    "@types/pg-copy-streams": "^1.2.5",
+    "typescript": "^5.6.0",
+    "vitest": "^2.1.0"
+  }
+}
